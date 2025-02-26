@@ -1,5 +1,5 @@
-# TradingTask
+# RealyTask
 
-Real-time stock quotes tracking app.
+Splash-to-Screen animation task
 
-Technologies: Kotlin, Jetpack Compose, Ktor, WebSockets, Room, Coil, Hilt, Coroutines, Flow.
+Technologies: Kotlin, Jetpack Compose
