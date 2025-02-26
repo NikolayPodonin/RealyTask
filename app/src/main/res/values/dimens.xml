@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="border_width">1dp</dimen>
+    <dimen name="corner_radius">6dp</dimen>
+
+    <dimen name="material_margin_medium">8dp</dimen>
+    <dimen name="material_margin_big">16dp</dimen>
+    <dimen name="material_margin_huge">32dp</dimen>
+    <dimen name="material_margin_giant">36dp</dimen>
+
+    <dimen name="splash_desc_text_size">12sp</dimen>
+    <dimen name="splash_subscription_text_size">24sp</dimen>
+</resources>

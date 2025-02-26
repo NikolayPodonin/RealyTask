@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.hilt)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -11,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.podonin.tradingtask"
-        minSdk = 24
+        minSdk = 29
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -39,14 +38,22 @@ android {
 
 dependencies {
 
-    implementation(project(":common-io"))
-    implementation(project(":common-ui"))
-    implementation(project(":quotes-api"))
-    implementation(project(":quotes-impl"))
-    implementation(project(":main-api"))
-    implementation(project(":main-impl"))
-
+    implementation(libs.androidx.splash)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
+    implementation(libs.androidx.datastore)
+
+    implementation(libs.material)
+
+    val composeBom = platform(libs.jetpack.compose)
+    implementation(composeBom)
+    implementation(libs.jetpack.compose.foundation)
+    implementation(libs.jetpack.compose.ui)
+    implementation(libs.jetpack.compose.runtime)
+    implementation(libs.jetpack.compose.material3)
+    implementation(libs.voyager)
 }

@@ -19,12 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GraphicsTask"
+rootProject.name = "RealyTask"
 include(":app")
-include(":quotes-impl")
-include(":quotes-api")
-include(":main-api")
-include(":main-impl")
-include(":common-ui")
-include(":common-io")
-include(":common-utils")
